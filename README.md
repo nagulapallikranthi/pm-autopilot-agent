@@ -1,51 +1,50 @@
 # PM Autopilot Agent
 
-## Overview
-PM Autopilot Agent is a project designed to automate various tasks related to project management. It streamlines workflows, enhances efficiency, and minimizes human error.
+A generic design project for a human-in-the-loop program-operations assistant that identifies delivery risks, requests focused updates, tracks follow-up state, and produces auditable summaries from synthetic project data.
 
-## Features
-- Automated scheduling of tasks.
-- Integration with popular project management tools.
-- Reporting and analytics capabilities.
+## Data and confidentiality notice
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/nagulapallikranthi/pm-autopilot-agent.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd pm-autopilot-agent
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
+This repository must use only fictional scenarios and synthetic data. It must not contain employer, customer, employee, product, project, tenant, financial, security, credential, incident, or proprietary organizational information.
 
-## Usage
-To start the autopilot agent, use the following command:
-```bash
-npm start
+Real Jira URLs, project keys, issue IDs, usernames, email addresses, webhook URLs, tokens, prompts copied from workplace systems, screenshots, exports, and internal operating rules are prohibited.
+
+See [PORTFOLIO_DATA_POLICY.md](PORTFOLIO_DATA_POLICY.md) before adding any artifact.
+
+## Current status
+
+This repository currently documents a concept under development. It does not yet contain a runnable application, package manifest, production integration, or validated deployment instructions.
+
+## Intended capabilities
+
+The planned generic demonstration may include:
+
+- Reading synthetic work-item data
+- Detecting stale, blocked, or at-risk items using transparent rules
+- Assigning explainable reason codes
+- Generating one focused follow-up question
+- Maintaining follow-up state to prevent repeated notifications
+- Escalating unresolved risks through configurable policies
+- Producing weekly program-health summaries
+- Recording decisions and actions for auditability
+
+## Design principles
+
+1. Human approval for consequential actions
+2. Explainable rules and reason codes
+3. Minimal, non-repetitive nudges
+4. Synthetic data only
+5. No embedded credentials or production endpoints
+6. Clear separation between demonstration logic and real integrations
+7. Testable failure handling and duplicate-notification controls
+
+## Planned repository structure
+
+```text
+src/          Demonstration agent logic
+tests/        Unit and scenario tests
+docs/         Architecture, controls, and operating model
+samples/      Synthetic inputs and outputs
+config/       Safe example configuration without credentials
 ```
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m 'Add some feature'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For any inquiries, please reach out to [nagulapallikranthi](mailto:nagulapallikranthi@example.com)
+Installation and usage instructions will be added only after a working implementation exists.
